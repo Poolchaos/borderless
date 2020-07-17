@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { APP_CONFIG, APP_DI_CONFIG } from "./app-config/app-config.constants";
+
 
 @NgModule({
   declarations: [
@@ -12,7 +14,10 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [{
+    provide: APP_CONFIG,
+    useValue: APP_DI_CONFIG
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

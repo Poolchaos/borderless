@@ -1,0 +1,52 @@
+
+#videoContainer {
+  display: table;
+  margin: 0 auto;
+}
+
+video {
+  margin: 10px;
+  border: 2px solid #000000;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  resize: none;
+  box-sizing : border-box;
+}
+
+.center {
+  margin: auto;
+  width: 70%;
+  border: 3px solid green;
+  padding: 20px;
+}
+
+input, button {
+  width: 100%;
+  box-sizing : border-box;
+}
+
+video {
+  width: 40%;
+  height: 100%;
+}
+
+button {
+  border: 1px solid #000000;
+  background-color: #0099ff;
+  color: #ffffff;
+  padding: 5px 10px;
+}
+
+button:disabled,
+button[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+th, td {
+  text-align: center;
+}
